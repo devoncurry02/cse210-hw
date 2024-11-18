@@ -1,9 +1,14 @@
 using System;
+using System.Runtime.CompilerServices;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning03 World!");
+        Fraction devon = new Fraction();
+        devon.SetTop(5);
+        devon.SetBottom(22);
+        Console.WriteLine($"Default Fraction: {devon.GetFractionString()}");
+        Console.WriteLine($"Default Fraction: {devon.GetDecimalValue()}");
     }
 }
