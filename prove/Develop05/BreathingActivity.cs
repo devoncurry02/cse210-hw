@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 class BreathingActivity:Activity {
     public BreathingActivity():base("Breathing Activity", "Breathe in and out to relax.") {}
 
-    public void Perform() {
+    public override void Perform() {
         Start();
         for (int i = 0; i < _length / 6; i++) {
             Console.Clear();

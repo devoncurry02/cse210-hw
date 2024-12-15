@@ -1,7 +1,7 @@
-class Activity {
+abstract class Activity {
     private string _name;
     private string _description;
-    private int _length;
+    protected int _length;
 
     public Activity(string name, string description) {
         _name = name;
@@ -27,5 +27,8 @@ class Activity {
     public void End() {
         Console.WriteLine("Well done. This Activity is complete.");
         Thread.Sleep(2000);
+        Console.Clear();
     }
+
+    public abstract void Perform();
 }
